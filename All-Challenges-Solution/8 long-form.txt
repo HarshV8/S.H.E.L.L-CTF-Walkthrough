@@ -1,0 +1,6 @@
+we need to deleted folder in any folder and tun to get the flag 
+
+$ rm -rf "DELETE ME!"
+$ ./executable
+
+FLAG : c57fc156c0bbb4555ae33fa54bef147a

@@ -1,0 +1,10 @@
+we just need to rename the file , so "mv" command should do just fine 
+
+$ mv <old name> <new name>
+
+# mv command can also be used to change names :p 
+
+then 
+$ ./executable 
+
+FLAG : 8cf04a9734132302f96da8e113e80ce5

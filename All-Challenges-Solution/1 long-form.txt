@@ -1,0 +1,7 @@
+The File contents can be simply read With the "cat" command, so running 
+
+$ cat "can you open this"
+
+will print out the flag 
+
+FLAG : DXjZPULLxYr17uwoI01bNLQbtFemEgo7

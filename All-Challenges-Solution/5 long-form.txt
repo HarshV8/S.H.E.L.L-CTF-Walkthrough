@@ -1,0 +1,17 @@
+this one is actully pretty simple, we need to go to the folder and just make a file with name "hello.txt" and run an executable that will give us the flag when it sees the file that we made 
+
+>> Word of caution , choose the folder and shell scripts according to your system otherwise the executable won't work !
+
+
+after choosing your system folder (my case 64 bit)
+go in folder, make a file hello.txt using 
+
+$ touch hello.txt
+
+and then run the executable with 
+
+$ ./executable 
+
+to reveal the flag 
+
+FLAG : b96ba508e3690f5168e4b0e68b15b178

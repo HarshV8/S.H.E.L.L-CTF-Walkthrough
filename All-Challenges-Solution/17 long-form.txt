@@ -1,0 +1,12 @@
+this one is about file permissions ! 
+we simply need to get the executing permission for the file then run it !
+
+so : the "chmod" command will help us !
+
+$ cd 64bit
+$ chmod +x executable
+$ ./executable
+
+that will give us the flag when we execute it ! 
+
+the flag is : FLAG : aab4b125bca447f96d4fe7920863a1ed

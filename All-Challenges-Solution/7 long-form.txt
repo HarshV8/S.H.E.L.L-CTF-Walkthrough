@@ -1,0 +1,9 @@
+we need to delete the file in the folders 
+
+we use "rm" command for that 
+
+$ rm "filename"
+
+then executing gives us the flag :
+
+FLAG : e1ed23c30baa9d7324f5b41e78755cf2

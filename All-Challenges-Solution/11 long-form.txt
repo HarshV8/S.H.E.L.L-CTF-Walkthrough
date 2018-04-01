@@ -1,0 +1,18 @@
+this is easier than it looks ! 
+:p 
+
+you can have multiple approaches but this one works just fine 
+we can use "find" command to find the "file 11" for us 
+
+so : -
+
+$ find . -type df -name "file 11"
+
+that gives us the location that the file is in folder 91 
+then 
+
+$ cd "may be here 91"
+$ cat "file 11"
+gives us the flag 
+
+FLAG : a721dbef56f96de023797a84a288370c

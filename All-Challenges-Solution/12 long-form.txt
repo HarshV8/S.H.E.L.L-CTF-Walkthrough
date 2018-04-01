@@ -1,0 +1,12 @@
+this one seems easy at first .. the extension of the file is ".txt" but nah 
+.. that's the bait :p
+
+a simple "more" command on the file like :-
+
+$ more find_my_extension.txt
+
+gives us info that the extension is PNG 
+
+so ,
+
+FLAG : PNG

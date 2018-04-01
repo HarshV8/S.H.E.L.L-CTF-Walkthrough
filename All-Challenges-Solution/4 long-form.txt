@@ -1,0 +1,11 @@
+the flag is hidden inside the folder as a hidden file so normal "ls" command wont show it unless you use :
+
+
+$ ls -al
+ which reveals a .hiddenflag file 
+which we can read the contents using the "cat" command as we did before ! 
+
+$ cat ".hiddenflag"
+
+FLAG : pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+

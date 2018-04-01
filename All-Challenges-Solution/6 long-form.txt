@@ -1,0 +1,9 @@
+Pretty Similar 
+
+mkdir used to make a new directory
+
+$ mkdir "SHELL"
+
+$./executable
+
+FLAG : 2598c4d35cff702f42517f3b76fc7b00 

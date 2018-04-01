@@ -1,0 +1,8 @@
+simple rm command 
+rmdir or rm -rf 
+
+$ cd 64bit
+$ rm -rf "DELET ME AGAIN!"
+$ ./executable
+
+FLAG : 4abb9bf59ce903fbe0f0a4b8ad0ccf27

@@ -1,0 +1,13 @@
+this one is simple , just go to the "new" directory and see the files sizes 
+using "ls" command ! so 
+
+$ cd new
+$ ls -al
+
+we get that hello is 20480 bytes 
+and the other is 0 bytes 
+
+so total = 20480 bytes !
+
+FLAG : 20480
+

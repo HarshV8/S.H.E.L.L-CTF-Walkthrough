@@ -1,0 +1,12 @@
+simple copying From one folder to the other :- 
+
+$ cp <source> <destination>
+which gives us :
+
+$ cp Source/temp.txt /Destination
+
+and then running the executable with 
+
+$ ./executable
+
+FLAG : 8cf04a9734132302f96da8e113e80ce5
