@@ -1,14 +1,22 @@
-   _____   _    _   ______   _        _               _____   _______   ______         ____                _____   _  __  _____     ____     ____    _____  
-  / ____| | |  | | |  ____| | |      | |             / ____| |__   __| |  ____|       |  _ \      /\      / ____| | |/ / |  __ \   / __ \   / __ \  |  __ \ 
- | (___   | |__| | | |__    | |      | |            | |         | |    | |__          | |_) |    /  \    | |      | ' /  | |  | | | |  | | | |  | | | |__) |
-  \___ \  |  __  | |  __|   | |      | |            | |         | |    |  __|         |  _ <    / /\ \   | |      |  <   | |  | | | |  | | | |  | | |  _  / 
-  ____) | | |  | | | |____  | |____  | |____        | |____     | |    | |            | |_) |  / ____ \  | |____  | . \  | |__| | | |__| | | |__| | | | \ \ 
- |_____/  |_|  |_| |______| |______| |______|        \_____|    |_|    |_|            |____/  /_/    \_\  \_____| |_|\_\ |_____/   \____/   \____/  |_|  \_\
-                                                                                                                                                            
-                                                                                                                                                            
+   _____   _    _   ______   _        _           _____   _______   ______ 
+  / ____| | |  | | |  ____| | |      | |         / ____| |__   __| |  ____|
+ | (___   | |__| | | |__    | |      | |        | |         | |    | |__   
+  \___ \  |  __  | |  __|   | |      | |        | |         | |    |  __|  
+  ____) | | |  | | | |____  | |____  | |____    | |____     | |    | |     
+ |_____/  |_|  |_| |______| |______| |______|    \_____|    |_|    |_|     
+                                                                           
+                                                                           
+  ____                _____   _  __  _____     ____     ____    _____  
+ |  _ \      /\      / ____| | |/ / |  __ \   / __ \   / __ \  |  __ \ 
+ | |_) |    /  \    | |      | ' /  | |  | | | |  | | | |  | | | |__) |
+ |  _ <    / /\ \   | |      |  <   | |  | | | |  | | | |  | | |  _  / 
+ | |_) |  / ____ \  | |____  | . \  | |__| | | |__| | | |__| | | | \ \ 
+ |____/  /_/    \_\  \_____| |_|\_\ |_____/   \____/   \____/  |_|  \_\
+                                                                       
+                                                                       
 
 # Author : Harsh Varagiya 
-# Email  : harsh8v@gmail.com
+# Email  : xtreme.research@gmail.com
 
 probably the thing that i found funny was that all the questions which require us to 
 
@@ -76,13 +84,10 @@ J
 [/output]
 
 
-
-
-
-
 now i know thats a lot of data , but most of it is unreadable, but the key thing is the flag !
 
 i won't lie, i guessed that they would not use any data encapsulation technieques to hide the data in the source code but if they had even dont that 
+
 then the mem_dump of the executable would have revealed that ! 
 
 if you notice carefully in the executable we can see that in the executable the "Failed. Try Again" is there along with some other data !
@@ -93,7 +98,7 @@ but , if we look carefully we also see other things very close to it especially 
 
 that is the string that gets printed out using if() condition and that means that it will be printed only when we complete the challenge
 
-and that is the flag ! 
+and that is the flag ! TO BE HONEST, I DIDN'T USE THIS "TRICK" DURING THE CTF EVEN THOUGH I COULD HAVE !
 
 so we can just have a look at the binary and see the flag right there! without completing the challenge!
 
@@ -104,5 +109,3 @@ so, i guess that having this knowledge won't change the outcome a lot!
 Thanks For Reading this! 
 
 exit()  #:p
-
-
