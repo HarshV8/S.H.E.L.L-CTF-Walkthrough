@@ -1,0 +1,108 @@
+   _____   _    _   ______   _        _               _____   _______   ______         ____                _____   _  __  _____     ____     ____    _____  
+  / ____| | |  | | |  ____| | |      | |             / ____| |__   __| |  ____|       |  _ \      /\      / ____| | |/ / |  __ \   / __ \   / __ \  |  __ \ 
+ | (___   | |__| | | |__    | |      | |            | |         | |    | |__          | |_) |    /  \    | |      | ' /  | |  | | | |  | | | |  | | | |__) |
+  \___ \  |  __  | |  __|   | |      | |            | |         | |    |  __|         |  _ <    / /\ \   | |      |  <   | |  | | | |  | | | |  | | |  _  / 
+  ____) | | |  | | | |____  | |____  | |____        | |____     | |    | |            | |_) |  / ____ \  | |____  | . \  | |__| | | |__| | | |__| | | | \ \ 
+ |_____/  |_|  |_| |______| |______| |______|        \_____|    |_|    |_|            |____/  /_/    \_\  \_____| |_|\_\ |_____/   \____/   \____/  |_|  \_\
+                                                                                                                                                            
+                                                                                                                                                            
+
+# Author : Harsh Varagiya 
+# Email  : harsh8v@gmail.com
+
+probably the thing that i found funny was that all the questions which require us to 
+
+run the elf executable was that we can kinda "hack" it to get the binary and then get 
+
+the flag directly without anything ! example !!!
+
+>> Taking example of the Challenge "Create it !!"
+
+>> Folder 5
+
+we get to see that :- inside the 64bit folder (for me) 
+
+where the executable is there and we need to make a file named "hello.txt" and run
+
+the executable , and when the executable detects the file it will give us the flag!
+
+but! There's a catch !!!
+
+just like i was supposed to use "escaping sequences" to get the flag from file names havinf "-" and other special characters in them
+
+but i was able to rename them using python and get the job done, which is not how they wanted me to do it (but hey it's hacking)
+
+so , similarly there is a way that we can directly get the flag without even completing the challenge ! 
+
+all we need to do is have a look at the binary of the exectables !!
+
+so to do that we can simply just "cat" the executable to see what it has in it! and we get the output as :
+
+[output]
+
+
+ELF>�@@�@8	@@@@@@��88@8@@@ ``@H ((`(`��TT@T@DDP�td��@�@44Q�tdR�td``��/lib64/ld-linux-x86-64.so.2GNUGNUJ�<�.z9�ѻ{"�N�ێ��/ 
+                                           libc.so.6fopenputsfclose__libc_start_main__gmon_start__GLIBC_2.2.5ui	>�`` `(`0`8`H�H��
+      H��t�KH���5�
+                   �%�
+                       @�%�
+                             h������%�
+                                       h������%�
+                                                  h������%z
+                                                             h������%r
+                                                                        h�����1�I��^H��H���PTI���@H��@H�ǽ@������fD�W`UH-P`H��H��w]øH��t�]�P`����P`UH-P`H��H��H��H��?H�H��u]úH��t�]H�ƿP`����=�
+ uUH���~���]��
+ ��@H�= t�H��tU� `H����]�{����s���UH��H����@��@�����H�E�H�}�t��@�����H�E�H��������
+���H��t�L��L��D��A��H��H9�u�H�[]A\A]A^A_�ff.���H�H��rI'm a file. Delete meFailed. Try again!e1ed23c30baa9d7324f5b41e78755cf2;0����|����L�����$��������
+       zRx
+                �����*zRx
+                                  �$���`FJ
+F                                           �?;*3$"D%���KA�C
+  DdX���eB�E�E �E(�H0�H8�M@l8A0A(B BB������@p@
+�@``���o�@H@�@                                   P@
+J
+ `x�@�	���o�@���o���o�@(`�@�@�@�@�@GCC: (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4.symtab.strtab.shstrtab.interp.note.ABI-tag.note.gnu.build-id.gnu.hash.dynsym.dynstr.gnu.version.gnu.version_r.rela.dyn.rela.plt.init.text.fini.rodata.eh_frame_hdr.eh_frame.init_array.fini_array.jcr.dynamic.got.got.plt.data.bss.comment8@8#T@T 1t@t$D���o�@�N
+                                                                        �@��VH@HJ^���o�@�
+                                                                                                      k���o�@� z�@���@�x
+                                                                                                                                      �P@P�p@p`��@����@�	��@���@�4� @ ��� �(`(���`�@`@P`P�0P+{H	P]8@T@t@�@�@H@�@�@	�@
+�@
+    P@
+�@�@�@�@ @`` `(`�``@`P`��
+�@K�P`SeP`l��@��@`� �H`��@�
+ 1P`= W
+                   P@crtstuff.c__JCR_LIST__deregister_tm_clonesregister_tm_clones__do_global_dtors_auxcompleted.6973__do_global_dtors_aux_fini_array_entryframe_dummy__frame_dummy_init_array_entrytest.c__FRAME_END____JCR_END____init_array_end_DYNAMIC__init_array_start_GLOBAL_OFFSET_TABLE___libc_csu_fini_ITM_deregisterTMCloneTabledata_startputs@@GLIBC_2.2.5_edatafclose@@GLIBC_2.2.5_fini__libc_start_main@@GLIBC_2.2.5__data_start__gmon_start____dso_handle_IO_stdin_used__libc_csu_init_end_start__bss_startmainfopen@@GLIBC_2.2.5_Jv_RegisterClasses__TMC_END___ITM_registerTMCloneTable_init
+
+
+[/output]
+
+
+
+
+
+
+now i know thats a lot of data , but most of it is unreadable, but the key thing is the flag !
+
+i won't lie, i guessed that they would not use any data encapsulation technieques to hide the data in the source code but if they had even dont that 
+then the mem_dump of the executable would have revealed that ! 
+
+if you notice carefully in the executable we can see that in the executable the "Failed. Try Again" is there along with some other data !
+
+so, we know that if we run the executable without completing the challenge , then the output will be printed as the "Failed. Try Again" line
+
+but , if we look carefully we also see other things very close to it especially this "e1ed23c30baa9d7324f5b41e78755cf2" string 
+
+that is the string that gets printed out using if() condition and that means that it will be printed only when we complete the challenge
+
+and that is the flag ! 
+
+so we can just have a look at the binary and see the flag right there! without completing the challenge!
+
+that's nice! but to be honest a true guy who knows what he is doing and knows his way around source codes will actully excel at this CTF
+
+so, i guess that having this knowledge won't change the outcome a lot!
+
+Thanks For Reading this! 
+
+exit()  #:p
+
+

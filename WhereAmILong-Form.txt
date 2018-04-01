@@ -1,0 +1,13 @@
+the "pwd" command gives us the present working directory of the terminal
+so that should give us ~/Downloads right ! 
+
+well ... no ... 
+
+checking it up in terminal we get to know that output is : 
+/home/<username>/Downloads
+so as Username is elli0t in that image 
+we know that pwd will give the output as 
+
+FLAG : /home/elli0t/Downloads
+
+
