@@ -1,0 +1,30 @@
+this is much like the 2nd question (folder 2)
+but before we can use the "cat *" to echo out all we need to do something better for it to be valid
+
+i chose my swiss-army-knife(python3) again, running a very similar code 
+and in the end printing out the flag was easy 
+
+$ python3
+
+>>> import os
+>>> x=0
+>>> files = os.listdir()
+>>> for file in files:
+....    os.rename(file,str(x))
+....    x+=1
+
+>>> os.system("cat *")
+t����W��Lvd���3q�
+�&��ڛ��[̹2�Ui,
+
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
++���z�C|����M�	�rkA����A���L�
+0
+
+>>> exit()
+
+
+now that is extra data, but the flag is clearly the string, so 
+
+FLAG : koReBOKuIDDepwhWk7jZC0RTdopnAYKh
