@@ -1,0 +1,29 @@
+i realised that i forgot how to open a file with "-" in its name 
+i was getting erros again and again!
+so i decided to take a different approach!
+
+i would just rename the file to something simpler :p 
+now even "mv" command will need escaping so i could not use that
+i decided to use my favourite language python for it !
+python3 os module renames the file to "simple.txt" and then it can be diretly seen
+using the "cat" function! 
+#Easy Trick!
+
+$ python3
+>>> import os
+>>> files = os.listdir()
+>>> files
+[<awkward file name>]
+>>> os.rename(files[0],"simple.txt")
+>>> os.system("cat simple.txt")
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+>>> exit()
+
+
+Although i also had an idea later on, that "cat *" would be much easier as it will cat out all files in that directory
+(only one in this case) so ... 
+$ cat *
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+could also be used!
+
+FLAG : boJ9jbbUNNfktd78OOpsqOltutMc3MY1
